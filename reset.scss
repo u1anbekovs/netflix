@@ -1,0 +1,84 @@
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: "Montserrat",sans-serif;
+  min-width: 320px;
+}
+a{
+  text-decoration: none;
+}
+@mixin between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin column{
+  display: flex;
+  flex-direction: column;
+}
+@mixin h{
+  font-size: 500%;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+@mixin btn{
+  background: transparent;
+  padding: 10px 30px;
+  border: 2px solid #FFFFFF;
+  border-radius: 13px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100%;
+  line-height: 130%;
+}
+@mixin h1{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 220%;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+@mixin h3{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 100%;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+@mixin a{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+@mixin grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@mixin hover-btn{
+  background: transparent;
+  cursor: pointer;
+  color: #2D2D2D;
+  padding: 11px 31px;
+  transition: 0.2s ease-in-out;
+  box-shadow: 10px 5px gray;
+}
+@mixin p{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100%;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+}
